@@ -3,15 +3,21 @@
 echo"<h3>Task 1: Looping with Increment using a Function</h3><br/>";
 echo "Use for loop in a Function<br/>";
 echo "All even numbers from 1 to 20 are following : <br/>";
-function isEvenForLoop($a,$n,$b){
+function isEvenForLoop($start,$end,$step){
+    $x = $start+1;
 
-    for($x = $a; $x <= $n; $x = $x+$b) {
+    for($x; $x <= $end; $x+=$step) {
         echo $x." , ";
     }
 
-}
+        }
 
-isEvenForLoop(2,20,2);
+
+
+isEvenForLoop(1,20,2);
+
+
+
 
 echo "<br>";
 echo "<br>";
@@ -20,18 +26,18 @@ echo "Use while loop in a Function<br/>";
 echo "All even numbers from 1 to 20 are following : <br/>";
 
 
-function isEvenWhileLoop($c,$d,$m){
+function isEvenWhileLoop($start,$end,$step){
 
-    $x = $c;
-    while($x <= $d) {
+    $x = $start+1;
+    while($x <= $end) {
 
     echo $x." , ";
-    $x = $x+$m;
+    $x += $step;
 
     }
 }
 
-isEvenWhileLoop(2,20,2);
+isEvenWhileLoop(1,20,2);
 
 echo "<br>";
 echo "<br>";
@@ -41,14 +47,16 @@ echo "Use do while loop in a Function<br/>";
 echo "All even numbers from 1 to 20 are following : <br/>";
 
 
-function isEvenDoWhileLoop($e,$h,$r){
- 
-            $x = $e;
-            do {
+function isEvenDoWhileLoop($start,$end,$step){
+           if($start%2!=0){
+            $x = $start+1;
+           }
+           
+           do {
                 echo $x." , ";
-                $x = $x+$r;
-            } while ($x <= $h);
+                $x += $step;
+            } while ($x <= $end);
 
 }
 
-isEvenDoWhileLoop(2,20,2);
+isEvenDoWhileLoop(1,20,2);
