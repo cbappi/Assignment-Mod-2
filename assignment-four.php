@@ -12,14 +12,18 @@ function fiboDisplay($n){
    
     echo $f2;
    
-    for($i = 3; $i <= $n; $i++) {
-      
+    for($i = 2; $i<$n; $i++) {
+         
         $f3 = $f1 + $f2;
+        echo " , ".$f3; 
         $f1 = $f2;
         $f2 = $f3;
-        echo " , ".$f3; 
+      
     }
     
     }
     fiboDisplay(15);
+
+
     
+

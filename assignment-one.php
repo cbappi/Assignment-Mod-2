@@ -48,9 +48,9 @@ echo "All even numbers from 1 to 20 are following : <br/>";
 
 
 function isEvenDoWhileLoop($start,$end,$step){
-           if($start%2!=0){
+           
             $x = $start+1;
-           }
+           
            
            do {
                 echo $x." , ";

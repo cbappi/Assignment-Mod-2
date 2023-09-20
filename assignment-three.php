@@ -1,16 +1,14 @@
 <?php
 
 echo"<h3>Task 3: Break on Condition</h3><br/>";
-echo "First 10 Fibonacci numbers are following : <br/>";
+echo "Required numbers are following : <br/>";
 
 $f1 = 0;
 $f2 = 1;
 $n = 10;
-echo $f1." , ";
 
-echo $f2;
 
-for($i = 3; $i <= $n; $i++) {
+for($i = 0; $i <= $n; $i++) {
   
     $f3 = $f1 + $f2;
     $f1 = $f2;
@@ -18,5 +16,5 @@ for($i = 3; $i <= $n; $i++) {
     if($f3>100){
         break;
     }
-    echo " , ".$f3 ; 
+    echo $f3." , "; 
 }
